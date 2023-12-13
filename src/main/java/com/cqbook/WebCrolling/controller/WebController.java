@@ -45,7 +45,7 @@ public class WebController {
 
     @GetMapping("/webtoon")
     public List<Webtoon> showWebtoon(){
-        String day = "목요일";
+        String day = "수요일";
         String url = "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=" + day +"+웹툰";
         List<Webtoon> result = webService.getWebtoons(url);
         return result;
